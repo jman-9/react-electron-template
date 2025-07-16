@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc",
-    "start": "electron .",
-    "dev": "pnpm build && pnpm start"
+    "build": "tsup",
+    "start": "electronmon dist/main.js",
+    "dev": "concurrently \"tsup --watch\" \"electronmon dist/main.js\""
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,10 @@
   },
   "devDependencies": {
     "@types/node": "^24.0.14",
+    "concurrently": "^9.2.0",
+    "electronmon": "^2.0.3",
     "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
 }
