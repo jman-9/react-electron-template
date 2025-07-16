@@ -1,0 +1,11 @@
+{
+  "name": "react-electron-practice",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter renderer dev\" \"pnpm --filter electron dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

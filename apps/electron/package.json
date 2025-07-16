@@ -1,0 +1,23 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "electron .",
+    "dev": "pnpm build && pnpm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.8.1",
+  "dependencies": {
+    "electron": "^37.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
