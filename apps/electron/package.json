@@ -4,8 +4,8 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsup",
-    "start": "electronmon dist/main.js",
+    "build": "cross-env MODE=build tsup",
+    "start": "cross-env MODE=build electron ../../dist/main.js",
     "dev": "concurrently \"tsup --watch\" \"electronmon dist/main.js\""
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "license": "MIT",
   "packageManager": "pnpm@10.8.1",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "electron": "^37.2.2"
   },
   "devDependencies": {

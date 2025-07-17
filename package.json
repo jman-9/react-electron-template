@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "dev": "concurrently \"pnpm --filter renderer dev\" \"pnpm --filter electron dev\""
+    "dev": "concurrently \"pnpm --filter electron dev\" \"pnpm --filter renderer dev\"",
+    "build": "pnpm --filter electron build && pnpm --filter renderer build",
+    "start": "pnpm --filter electron start"
   },
   "devDependencies": {
     "concurrently": "^8.0.1"
